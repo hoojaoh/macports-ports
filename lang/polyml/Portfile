@@ -2,6 +2,7 @@ PortSystem 1.0
 PortGroup           github 1.0
 
 github.setup        polyml polyml 5.7.1 v
+revision            1
 categories          lang sml
 platforms           darwin
 maintainers         {veonix.com:phil.clayton @pclayton} openmaintainer
@@ -16,6 +17,8 @@ homepage            http://www.polyml.org/
 checksums           rmd160  17644f9f9c3073486788e1bf6a368247788cfd35 \
                     sha256  31d01e21af6203af75f8b377eeb90aa3eb8b7b1a6e2d942323da53ae390c57e5 \
                     size    7218581
+
+depends_build       port:pkgconfig
 
 depends_lib         port:gmp port:libffi
 
